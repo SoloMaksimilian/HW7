@@ -57,6 +57,15 @@ public class Main {
             }
         }
 
+        int now = 2024;
+        for (int years = 0; years <= 2134; years = years + 79) {
+            int min = now - 200;
+            int max = now + 100;
+            if (years > min && years < max) {
+                System.out.println(years);
+            }
+        }
+
 
     }
 }
