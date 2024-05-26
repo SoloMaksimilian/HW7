@@ -30,5 +30,12 @@ public class Main {
             System.out.println("Год " + year + ", численность населения " + population);
         }
 
+        int s = 15000;
+        for (int d = 1; s <= 12000000; d++) {
+            s = s + (s / 100 * 7);
+            System.out.println("Месяц " + d + ", сумма накоплений равна " + s + " рублей");
+        }
+
+
     }
 }
