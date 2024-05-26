@@ -50,6 +50,13 @@ public class Main {
             }
         }
 
+        int firstFriday = 3;
+        for (int day = 0; day <= 31; day++) {
+            if ((day - firstFriday) % 7 == 0) {
+                System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет");
+            }
+        }
+
 
     }
 }
