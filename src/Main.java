@@ -38,6 +38,18 @@ public class Main {
             }
         }
 
+        int v = 15000;
+        int year = 0;
+        int month = 0;
+        while (year < 9) {
+            v = v + (v / 100 * 7);
+            month = month + 1;
+            year = month / 12;
+            if (month % 6 == 0) {
+                System.out.println("Месяц " + month + ", сумма накоплений равна " + v + " рублей");
+            }
+        }
+
 
     }
 }
