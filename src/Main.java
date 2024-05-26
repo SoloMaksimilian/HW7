@@ -23,13 +23,12 @@ public class Main {
         System.out.println(" ");
 
         int population = 12000000;
-        int fertility=0;
-        int mortality=0;
-        for (int year = 0; year<=10; year++) {
-            System.out.println(population);
-            population = population+fertility-mortality;
-            fertility = population / 1000 * 17;
-            mortality = population / 1000 * 8;
-            }
+        for (int year = 1; year <= 10; year++) {
+            int fertility = population / 1000 * 17;
+            int mortality = population / 1000 * 8;
+            population = population + fertility - mortality;
+            System.out.println("Год " + year + ", численность населения " + population);
+        }
+
     }
 }
